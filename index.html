@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="./style.css">
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./app.js"></script>
 
     <div id="app" class="mb-15">
         {{ message }}
         <div  v-bind:title="spanTitle" class="mb-15">啊哈哈哈！ 注意我的 TITLE</div>
-        <ul class="mb-15">
+        <ul class="ul-todo mb-15">
             <li v-for="todo of todoList">
                 {{todo.name}}
             </li>
+            <todo-item v-for="let o of todoItem"
+                       v-bind:todo="o"
+            ></todo-item>
         </ul>
     </div>
 
 
 
 
+
     <script src="./index.js"></script>
+
 </body>
 </html>

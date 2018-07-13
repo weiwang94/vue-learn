@@ -6,7 +6,12 @@ var app = new Vue({
         todoList: [
             {name: '吃饭'},
             {name: '睡觉'},
-            {name: '打豆豆'},
+            {name: '乐乐'},
+        ],
+        todoItem: [
+            {name: 'Avatar'},
+            {name: 'Cascader'},
+            {name: 'checkbox'},
         ]
     }
 })
