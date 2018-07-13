@@ -14,4 +14,5 @@ var app = new Vue({
             {name: 'checkbox'},
         ]
     }
+
 })
